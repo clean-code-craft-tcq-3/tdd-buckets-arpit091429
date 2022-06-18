@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include "chargingRange.hpp"
 
 bool checkInRange(int val, int startRange, int endRange)
 {
@@ -27,6 +27,6 @@ int getNoOfRValuesInRange(int* array_p, int startRange, int endRange)
         {
         }
     }
-    printf("\n%d-%d,%d", startRange, endRange, valueInRange);
+    cout<< startRange <<endRange << valueInRange <<endl;
     return valueInRange;
 }
