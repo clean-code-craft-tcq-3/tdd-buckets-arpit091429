@@ -8,4 +8,9 @@ TEST_CASE("detect set of values  from  specified range within input array of int
     int startRangeValue = 3;
     int endRangeValue   = 5;
     REQUIRE(getNoOfRValuesInRange(sampleArray, startRangeValue, endRangeValue) == 4);
+    
+    int sampleArray[]   = {};
+    int startRangeValue = 0;
+    int endRangeValue   = 0;
+    REQUIRE(getNoOfRValuesInRange(sampleArray, startRangeValue, endRangeValue) == 0);
 }
