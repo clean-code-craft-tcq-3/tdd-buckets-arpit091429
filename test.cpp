@@ -1,5 +1,6 @@
 
-#include "main.hpp"
+
+#include "chargingRange.hpp"
 #include "test/catch.hpp"
 
 TEST_CASE("detect set of values  from  specified range within input array of integers")
