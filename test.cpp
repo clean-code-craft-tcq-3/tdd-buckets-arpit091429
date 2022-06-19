@@ -15,13 +15,13 @@ TEST_CASE("detect set of values  from  specified range within input array of int
     REQUIRE(getNoOfRValuesInRange(sampleArray, startRangeValue, endRangeValue) == 0);
     
     int sampleArray[]   = {1};
-    int startRangeValue = 0;
-    int endRangeValue   = 0;
+    int startRangeValue = 1;
+    int endRangeValue   = 3;
     REQUIRE(getNoOfRValuesInRange(sampleArray, startRangeValue, endRangeValue) == 0);
     
     int sampleArray[]   = {1,3,5};
-    int startRangeValue = 0;
-    int endRangeValue   = 0;
+    int startRangeValue = 1;
+    int endRangeValue   = 5;
     REQUIRE(getNoOfRValuesInRange(sampleArray, startRangeValue, endRangeValue) == 0);
     
     int sampleArray[]   = {-1};
