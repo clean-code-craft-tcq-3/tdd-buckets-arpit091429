@@ -1,4 +1,23 @@
-#include <iostream>
+#pragma once
+#include <vector>
 
-int  getNoOfValuesInRange(int* array_p, int startRange, int endRange);
-bool checkInRange(int val, int startRange, int endRange);
+using namespace std;
+
+struct ContinuityInfo
+{
+	int m_startIndexValueOfContinuousRange;
+	int m_endIndexValueOfContinuousRange;
+	int m_totalReadingContinuousRange;
+	
+	ContinuityInfo()
+	: m_startIndexValueOfContinuousRange(0)
+	, m_endIndexValueOfContinuousRange(0)
+	, m_totalReadingContinuousRange(1)
+	{
+	}
+};
+
+std::vector<ContinuityInfo> CalculateRangeAndReadings(std::vector<int> periodicCurrentVector);
+void checkForContinuityInPeriodicCurrent(std::vector<int> sortedPeriodicCurrents, int CurrentIndexInPeriodicCurrentVector, ContinuityInfo& continuityInfo);
+bool isValueContinuous(int currentIndexValue, int followingIndexValue);
+
